@@ -13,10 +13,14 @@
         $this->year = $_year;
         $this->mainActor = $_mainActor;
         $this->genre = $_genre;
+        $this->oscar = $_oscar;
     }
-    public function setName($movieName){
-        $this->movieName = $movieName;
-        var_dump($movieName);
+    public function setOscar ($oscar){
+        if($this->oscar > 0){
+            $this->oscar = $oscar;
+        } else {
+            $this->oscar = 'è un filMaccio';
+        }
     }
   }
 
