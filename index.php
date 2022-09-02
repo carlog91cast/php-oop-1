@@ -40,8 +40,8 @@ class Movie
     }
 }
 
-$movieUno = new Movie('Avatar', 'Osvaldo Paniccia', '2012', 'Nino Frassica', 'snuff movie', '3');
-$movieDue = new Movie('The Batman', 'Matt Reeves', '2021', 'Robert Pattinson', 'comic movie', '0');
+$movieOne = new Movie('Avatar', 'Osvaldo Paniccia', '2012', 'Nino Frassica', 'snuff movie', '3');
+$movieTwo = new Movie('The Batman', 'Matt Reeves', '2021', 'Robert Pattinson', 'comic movie', '0');
 
 
 
@@ -59,35 +59,19 @@ $movieDue = new Movie('The Batman', 'Matt Reeves', '2021', 'Robert Pattinson', '
 <body>
     <h1>Movies</h1>
     <h2>
+        movie one:
         <?php
-        echo $movieUno->getName();
-        echo $movieDue->getName()
+        echo $movieOne->getName() . ' - director: ' .  $movieOne->getDirector() . ' - year: ' . $movieOne->getYear() . ' - main actor: ' . $movieOne->getMainActor() . ' - oscar: ' .  $movieOne->getOscar()
         ?>
     </h2>
-    <h3>
+    <br>
+    <h2>
+        movie two:
         <?php
-        echo $movieUno->getDirector();
-        echo $movieDue->getDirector()
+        echo $movieTwo->getName() . ' - director: ' .  $movieTwo->getDirector() . ' - year: ' . $movieTwo->getYear() . ' - main actor: ' . $movieTwo->getMainActor() . ' - oscar: ' .  $movieTwo->getOscar()
         ?>
-    </h3>
-    <h3>
-        <?php
-        echo $movieUno->getYear();
-        echo $movieDue->getYear()
-        ?>
-    </h3>
-    <h3>
-        <?php
-        echo $movieUno->getMainActor();
-        echo $movieDue->getMainActor()
-        ?>
-    </h3>
-    <h3>
-        <?php
-        echo $movieUno->getOscar();
-        echo $movieDue->getOscar()
-        ?>
-    </h3>
+    </h2>
+   
 
 </body>
 
