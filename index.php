@@ -13,18 +13,24 @@
         $this->year = $_year;
         $this->mainActor = $_mainActor;
         $this->genre = $_genre;
-        $this->oscar = $_oscar;
+        $this->setOscar($_oscar);
     }
     public function setOscar ($oscar){
-        if($this->oscar > 0){
+        if($this->oscar > 1){
             $this->oscar = $oscar;
         } else {
             $this->oscar = 'è un filMaccio';
         }
+        
+    }
+    public function setName ($movieName){
+        if (strlen($movieName) > 3) {
+            $this->movieName = $movieName;
+        }
     }
   }
 
-  $movieUno = new Movie('Avatar', '2012', 'Osvaldo Paniccia', '2012', 'Nino Frassica', 'snuff movie', '1');
+  $movieUno = new Movie('Avatar', 'Osvaldo Paniccia', '2012', 'Nino Frassica', 'snuff movie', '3');
 
   var_dump($movieUno);
 
