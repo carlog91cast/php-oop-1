@@ -34,14 +34,18 @@ class Movie
     {
         return $this->mainActor;
     }
+    public function getGenre()
+    {
+        return $this->genre;
+    }
     public function getOscar()
     {
         return $this->oscar;
     }
 }
 
-$movieOne = new Movie('Avatar', 'Osvaldo Paniccia', '2012', 'Nino Frassica', 'snuff movie', '3');
-$movieTwo = new Movie('The Batman', 'Matt Reeves', '2021', 'Robert Pattinson', 'comic movie', '0');
+$movieOne = new Movie('Avatar', 'Osvaldo Paniccia', '2012', 'Nino Frassica', 'snuff movie', 3);
+$movieTwo = new Movie('The Batman', 'Matt Reeves', '2021', 'Robert Pattinson', 'comic movie', 0);
 
 
 
@@ -61,14 +65,14 @@ $movieTwo = new Movie('The Batman', 'Matt Reeves', '2021', 'Robert Pattinson', '
     <h2>
         movie one:
         <?php
-        echo $movieOne->getName() . ' - director: ' .  $movieOne->getDirector() . ' - year: ' . $movieOne->getYear() . ' - main actor: ' . $movieOne->getMainActor() . ' - oscar: ' .  $movieOne->getOscar()
+        echo $movieOne->getName() . ' - director: ' .  $movieOne->getDirector() . ' - year: ' . $movieOne->getYear() . ' - main actor: ' . $movieOne->getMainActor() . ' - genre: ' .  $movieOne->getGenre() . ' - oscar: ' .  $movieOne->getOscar()
         ?>
     </h2>
     <br>
     <h2>
         movie two:
         <?php
-        echo $movieTwo->getName() . ' - director: ' .  $movieTwo->getDirector() . ' - year: ' . $movieTwo->getYear() . ' - main actor: ' . $movieTwo->getMainActor() . ' - oscar: ' .  $movieTwo->getOscar()
+        echo $movieTwo->getName() . ' - director: ' .  $movieTwo->getDirector() . ' - year: ' . $movieTwo->getYear() . ' - main actor: ' . $movieTwo->getMainActor() . ' - genre: ' . $movieOne->getGenre() . ' - oscar: ' .  $movieTwo->getOscar()
         ?>
     </h2>
    
