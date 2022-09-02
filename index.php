@@ -72,7 +72,7 @@ $movieTwo = new Movie('The Batman', 'Matt Reeves', '2021', 'Robert Pattinson', '
     <h2>
         movie two:
         <?php
-        echo $movieTwo->getName() . ' - director: ' .  $movieTwo->getDirector() . ' - year: ' . $movieTwo->getYear() . ' - main actor: ' . $movieTwo->getMainActor() . ' - genre: ' . $movieOne->getGenre() . ' - oscar: ' .  $movieTwo->getOscar()
+        echo $movieTwo->getName() . ' - director: ' .  $movieTwo->getDirector() . ' - year: ' . $movieTwo->getYear() . ' - main actor: ' . $movieTwo->getMainActor() . ' - genre: ' . $movieTwo->getGenre() . ' - oscar: ' .  $movieTwo->getOscar()
         ?>
     </h2>
    
